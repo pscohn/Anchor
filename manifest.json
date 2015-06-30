@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Anchor Floating Bars",
     "description": "Right click on a floating navigation bar to move it out of the way of the content when you scroll down. Doesn't work on all pages.",
-    "version": "1.0",
+    "version": "1.0.2",
     "permissions": [
         "activeTab",
         "contextMenus",
