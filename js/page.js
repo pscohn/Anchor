@@ -7,9 +7,12 @@ chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         if (request.action == "hideElem") {
             var el = selected;
-            while (el.parentNode) {
+            if (el.style.position == "fixed") {
+                el.style.position = "relative";
+            }
+            while (typeof el.parentNode) {
                 el = el.parentNode;
-                if (el.style.position = "fixed") {
+                if (el.style.position == "fixed") {
                     el.style.position = "relative";
                 }
             }
